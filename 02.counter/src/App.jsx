@@ -5,23 +5,16 @@ function App() {
   
   let [counter, setCounter] = useState(0)
  
-
   const addValue = () => {
-    if(counter >= 20)
-      setCounter = 20
-    
-    else  
-      counter = counter + 1
-      setCounter(counter)
-    
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevcounter => prevcounter+1)
+      
   }
   
   const removeValue = () => {
-   
-    if(counter <= 0)
-      setCounter = 0   
-    else
-      setCounter(counter - 1)
+      setCounter(counter-1)
   }
 
   return (
